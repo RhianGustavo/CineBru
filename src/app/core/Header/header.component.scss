@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+$white: #fff;
+
+.font-l{
+    font-family: 'Lilita One', cursive;
+}
+
+.active-white{
+    background: $white;
+}
+
+.rounded-30{
+    border-radius: 30px
+}

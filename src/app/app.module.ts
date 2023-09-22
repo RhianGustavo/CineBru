@@ -5,8 +5,8 @@ import { FormsModule } from '@angular/forms';
 import {RouterModule } from '@angular/router';
 import { RoutingModule } from './routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from '../app/Header/header.component';
-import { FooterComponent } from '../app/Footer/footer.component';
+import { HeaderComponent } from '../app/core/Header/header.component';
+import { FooterComponent } from '../app/core/Footer/footer.component';
 import { HomeComponent } from '../app/pages/home/home.component';
 import { FilmesComponent } from '../app/pages/filmes/filmes.component';
 
