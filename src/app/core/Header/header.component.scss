@@ -1,10 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
-
 $white: #fff;
+$gray: #ecebeb;
 
-.font-l{
-    font-family: 'Lilita One', cursive;
-}
 
 .active-white{
     background: $white;
@@ -12,4 +8,8 @@ $white: #fff;
 
 .rounded-30{
     border-radius: 30px
+}
+
+.hover:hover{
+    background: #ecebeb;
 }
