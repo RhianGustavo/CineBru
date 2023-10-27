@@ -1,24 +1,23 @@
-// Importe estas duas bibliotecas para habilitar o roteamento //
-import { NgModule } from "@angular/core";
-import { Routes, RouterModule } from "@angular/router";
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
-// Importe todos os seus componentes //
-import { HomeComponent } from "../app/pages/home/home.component";
-import { FilmesComponent } from "../app/pages/filmes/filmes.component";
-import { IngressoComponent } from "../app/pages/ingresso/ingresso.component";
-import { CadastrarComponent } from "../app/pages/cadastrar/cadastrar.component";
+import { HomeComponent } from './pages/home/home.component';
+import { FilmeComponent } from './pages/filmes/filmes.component';
+import { IngressoComponent } from './pages/ingresso/ingresso.component';
+import { CadastrarComponent } from './pages/cadastrar/cadastrar.component';
+import { FilmeDetalhesComponent } from './pages/filme-detalhes/filme-detalhes.component';
+import { FilmeDetalhesModule } from './pages/filme-detalhes/filme-detalhes.module';
 
-// Declare uma constante para configurar as rotas //
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: "", redirectTo: "/home", pathMatch: "full" },
-  { path: 'filmes', component: FilmesComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'filmes', component: FilmeComponent },
+  { path: 'filme-detalhes/:id', component: FilmeDetalhesComponent },
   { path: 'ingresso', component: IngressoComponent },
-  { path: 'cadastrar', component: CadastrarComponent},
+  { path: 'cadastrar', component: CadastrarComponent },
   { path: '**', component: HomeComponent }
 ];
 
-// Crie o módulo de roteamento e exporte-o //
 @NgModule({
   imports: [RouterModule.forRoot(appRoutes)],
   exports: [RouterModule]
